@@ -42,6 +42,6 @@ public class Teacher {
      */
     @Override
     public String toString() {
-        return String.format("Name: %s %s Subject %s", firstName, lastName, subject);
+        return String.format("Name: %s %s Subject: %s", firstName, lastName, subject);
     }
 }

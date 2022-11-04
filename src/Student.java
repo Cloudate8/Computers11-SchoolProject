@@ -66,12 +66,12 @@ public class Student {
      */
     private int createUniqueStudentNumber() {
         Random random = new Random();
-        // Give the student a random number
-        int randomStudentNumber = random.nextInt();
+        // Give the student a positive random number
+        int randomStudentNumber = random.nextInt(1, Integer.MAX_VALUE);
 
         // If the number is not unique, keep giving random numbers till it is unique
         while (studentNumberStore.contains(randomStudentNumber)) {
-            randomStudentNumber = random.nextInt();
+            randomStudentNumber = random.nextInt(1, Integer.MAX_VALUE);
         }
 
         // Add the new number that will enter circulation to the store
@@ -140,6 +140,6 @@ public class Student {
      */
     @Override
     public String toString() {
-        return String.format("Name: %s %s Grade %s Student Number %s", firstName, lastName, grade, studentNumber);
+        return String.format("Name: %s %s Grade: %s Student Number: %s", firstName, lastName, grade, studentNumber);
     }
 }
