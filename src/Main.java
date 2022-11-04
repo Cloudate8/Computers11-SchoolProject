@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
 
         // Create a school
-        School school = new School(
+        final School school = new School(
                 "Great school",
                 "District of Sleepyland",
                 "Sleepyland, where all schools are great"

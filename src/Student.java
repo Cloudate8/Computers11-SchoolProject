@@ -9,7 +9,6 @@ public class Student {
     private String firstName;
     private String lastName;
     private int grade;
-
     /*
      * Importantly, the student number needs to be unique from every other student number.
      * To ensure that all student numbers are unique, student numbers are highly discouraged from being manually assigned.
@@ -65,7 +64,7 @@ public class Student {
      * @return A unique student number
      */
     private int createUniqueStudentNumber() {
-        Random random = new Random();
+        final Random random = new Random();
         // Give the student a positive random number
         int randomStudentNumber = random.nextInt(1, Integer.MAX_VALUE);
 
