@@ -37,7 +37,7 @@ public class Teacher {
     }
 
     /**
-     * Print out the teacher's full name and their subject
+     * Show the teacher's full name and their subject
      * @return the teacher's full name and their subject
      */
     @Override

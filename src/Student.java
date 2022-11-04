@@ -134,7 +134,10 @@ public class Student {
         studentNumberStore.add(this.studentNumber);
     }
 
-
+    /**
+     * Show the student's full name, grade, and student number
+     * @return the student's full name, grade, and student number
+     */
     @Override
     public String toString() {
         return String.format("Name: %s %s Grade %s Student Number %s", firstName, lastName, grade, studentNumber);
